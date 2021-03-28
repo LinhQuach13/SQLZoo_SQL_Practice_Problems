@@ -11,6 +11,7 @@ SELECT name
  WHERE population > 200000000;
 
 
+
  /* Per capita GDP
 3. Give the name and the per capita GDP for those countries with a population of at least 200 million.
 NOTE: We are not changing/replacing anything in the database here. We changing the way we look at it.
