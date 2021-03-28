@@ -66,8 +66,7 @@ United Kingdom has a small population and a small area, it should be excluded.*/
 SELECT name, population, area
 FROM world
 WHERE  (
-area > 3000000 
-AND NOT population > 250000000
+area > 3000000 AND NOT population > 250000000
 )
 OR (
 population > 250000000 AND NOT area > 3000000 
