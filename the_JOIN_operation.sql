@@ -76,4 +76,11 @@ SELECT DISTINCT player
  SELECT DISTINCT player FROM 
 	game JOIN goal ON (id = matchid)
 	WHERE (team1 = 'GER' OR team2 = 'GER') 
-		AND teamid <> 'GER' ;
+		AND teamid <> 'GER';
+
+
+-- 9. Show teamname and the total number of goals scored.
+-- COUNT and GROUP BY
+SELECT teamname, COUNT(player) goals
+FROM eteam JOIN goal ON eteam.id = goal.teamid
+GROUP BY teamname
