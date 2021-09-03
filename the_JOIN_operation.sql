@@ -84,3 +84,9 @@ SELECT DISTINCT player
 SELECT teamname, COUNT(player) goals
 FROM eteam JOIN goal ON eteam.id = goal.teamid
 GROUP BY teamname
+
+--- 10.
+-- Show the stadium and the number of goals scored in each stadium.
+SELECT stadium, COUNT(player) goals
+FROM game JOIN goal ON game.id = goal.matchid
+GROUP BY stadium
